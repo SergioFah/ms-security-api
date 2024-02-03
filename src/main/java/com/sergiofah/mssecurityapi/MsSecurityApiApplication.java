@@ -17,11 +17,6 @@ import java.util.TimerTask;
 @SpringBootApplication
 @EnableScheduling
 public class MsSecurityApiApplication {
-
-	@Autowired
-	private UpdateService updateService;
-
-
 	public static void main(String[] args) {
 		SpringApplication.run(MsSecurityApiApplication.class, args);
 	}
