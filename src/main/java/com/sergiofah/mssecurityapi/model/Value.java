@@ -20,11 +20,10 @@ import lombok.Data;
 public class Value {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
+    @Basic(optional = false)
+    @Column(name = "id",unique=true, nullable = false)
     @JsonProperty("ID")
-    private String id1;
+    private String id;
 
     @Column(name = "alias")
     @JsonProperty("Alias")
